@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Inputs</title>
+</head>
+<body>
+    <!-- where the data will be send to -->
+    <form action="process.php">
+        <!-- Text -->
+        <div>
+            <label for="name">Name:</label>
+            <input type="text">
+        </div>
+        <!-- Line break -->
+        <br>
+        <!-- Email -->
+        <div>
+            <label for="email">Email:</label>
+            <!-- placeholder : text that will appear on the box -->
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+        </div>
+        <br>
+        <!-- Text Area -->
+        <div>
+            <label for="feedback">Feedback:</label>
+            <br>
+            <textarea name="feedback" id="feedback" cols="20" rows="10"></textarea>
+        </div>
+        <br>
+        <!-- Number -->
+        <div>
+            <label for="age">Age:</label>
+            <input type="number">
+        </div>
+        <br>
+        <!-- Select : Drop down -->
+        <div>
+            <label for="gender">Gender:</label>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <!-- selected : to make it as default value -->
+                <option value="female" selected>Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <br>
+        <!-- Date / Calendar -->
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input type="date">
+        </div>
+        <br>
+        <!-- Radio Buttons : provide options to user (choose one)-->
+        <div>
+            <label for="membership">Membership</label>
+            <input type="radio" id="membership" name="membership" value="standard">Standard
+            <input type="radio" id="membership" name="membership" value="silver">Silver
+            <input type="radio" id="membership" name="membership" value="gold">Gold
+        </div>
+        <br>
+        <!-- Checkbox : provide options to user (choose one or more)-->
+        <div>
+            <label for="color">My favourite color is </label>
+            <input type="checkbox" name="color" id="color" value="red">Red
+            <input type="checkbox" name="color" id="color" value="yellow">Yellow
+            <input type="checkbox" name="color" id="color" value="green">Green
+            <input type="checkbox" name="color" id="color" value="pink">Pink
+        </div>
+        <br>
+        <!-- Submit Button -->
+        <div>
+            <input type="submit" value="submit" >
+            <button type="submit">Submit</button>
+
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
